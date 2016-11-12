@@ -4,7 +4,7 @@ include("include/config.php");
 ?>
 <?php
 if(isset($_GET['id'])){
-    $id=$_GET['id'];//lấy idproduct
+    $id=$_GET['id'];//get idproduct
     if(isset($_SESSION['cart']) && is_array($_SESSION['cart'])){
         $count = count($_SESSION['cart']);
         $flag = false;
